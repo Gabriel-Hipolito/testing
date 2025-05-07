@@ -29,6 +29,7 @@ Partial Class Form1
         Me.FontDialog1 = New System.Windows.Forms.FontDialog()
         Me.Button2 = New System.Windows.Forms.Button()
         Me.ComboBox1 = New System.Windows.Forms.ComboBox()
+        Me.VScrollBar1 = New System.Windows.Forms.VScrollBar()
         CType(Me.ErrorProvider1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -62,12 +63,20 @@ Partial Class Form1
         Me.ComboBox1.Size = New System.Drawing.Size(121, 21)
         Me.ComboBox1.TabIndex = 2
         '
+        'VScrollBar1
+        '
+        Me.VScrollBar1.Location = New System.Drawing.Point(144, 88)
+        Me.VScrollBar1.Name = "VScrollBar1"
+        Me.VScrollBar1.Size = New System.Drawing.Size(62, 80)
+        Me.VScrollBar1.TabIndex = 3
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.ActiveCaption
         Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.Controls.Add(Me.VScrollBar1)
         Me.Controls.Add(Me.ComboBox1)
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.Button1)
@@ -84,4 +93,5 @@ Partial Class Form1
     Friend WithEvents Button2 As Button
     Friend WithEvents DirectoryEntry1 As DirectoryServices.DirectoryEntry
     Friend WithEvents FontDialog1 As FontDialog
+    Friend WithEvents VScrollBar1 As VScrollBar
 End Class
